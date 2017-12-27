@@ -44,7 +44,6 @@ public class LoggerFactory {
 		}
 		
 		customLogger.setValores(mensaje);
-		System.out.println(config);
 		if(config.isLogToConsole()) {
 			Logger.getLogger("MyLog").addHandler(new ConsoleHandler());
 			Logger.getLogger("MyLog").log(level, customLogger.getMessageText());
